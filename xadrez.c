@@ -36,9 +36,26 @@ int main()
     do
     {
         printf("\nCima, Direita\n");
-        // Incrimenta 1 para evitar loop infinito.
+        // Incrementa 1 para evitar loop infinito.
         bispo++;
     } while (bispo <= 5);
+
+    printf("\n==========CAVALO==========\n");
+
+    int j = 0;
+
+
+    for (int i = 1; i <= 2; i++)
+    {
+        printf("BAIXO ");
+
+        while (j == 1)
+        {
+            printf("ESQUERDA\n");
+            j++; //Incrementa 'j' para 2, o que faz com que o loop 'while' termine na próxima verificaçao.
+        }
+        j++; //Incrementa 'j' após o loop 'while' (ou se ele não executou para na proxima rodada ser execultado)
+    }
 
     return 0;
 }
